@@ -1,0 +1,4 @@
+<app-gamecontrol (increament)="startIncrease($event)"></app-gamecontrol>
+<span>{{increamentNumber}}</span>
+<app-odd *ngIf="increamentNumber%2 !== 0 && increamentNumber > 0" [oddNumber]="increamentNumber"></app-odd>
+<app-even *ngIf="increamentNumber%2 === 0 && increamentNumber > 0 " [evenNumber]="increamentNumber"></app-even>

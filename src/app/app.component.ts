@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  increamentNumber: number;
+
+  startIncrease(number){
+    this.increamentNumber = number.value;
+  }
 }
